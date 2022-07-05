@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./modelsListPage.css";
+import Search from "../../common/form/search";
+import Models from "../../ui/models";
 
 const ModelsListPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
@@ -96,34 +97,9 @@ const ModelsListPage = () => {
     );
 
     return (
-    <div className="modelslist">
-        <div className="search">
-            <input
-                type="text"
-                id="search"
-                placeholder="Поиск модели"
-                onChange={handleSearch}
-                value={searchQuery}
-            />
-        </div>
-        <div className="models">
-            {filteredModels.map((model) => (
-                <div className="model" key={model.id}>
-                    <p className="modelname">
-                        {model.name}
-                    </p>
-                    <div className="tracks">
-                        <p>{model.anterior_segment ? ("anterior_segment") : ("-") }</p>
-                        <p>{model.posterior_segment ? ("posterior_segment") : ("-") }</p>
-                        <p>{model.long_segment ? ("long_segment") : ("-")}</p>
-                        <p>{model.fronto_occipital_fasciculus ? ("fronto_occipital_fasciculus") : ("-") }</p>
-                        <p>{model.inferior_longitudinal_fasciculus ? ("inferior_longitudinal_fasciculus") : ("-") }</p>
-                        <p>{model.uncinate_fasciculus ? ("uncinate_fasciculus") : ("-")}</p>
-                        <p>{model.frontal_aslant_tract ? ("frontal_aslant_tract") : ("-")}</p>
-                    </div>
-                </div>
-            ))}
-        </div>
+    <div>
+        <Search onChange={handleSearch} data={searchQuery}/>
+        <Models models={filteredModels}/>
     </div>
     );
 };

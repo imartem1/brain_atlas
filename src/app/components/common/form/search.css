@@ -1,0 +1,14 @@
+.search{
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeff1;
+}
+
+#search{
+    width: 800px;
+    padding: 10px 5px;
+    border: solid #e8e9ed 1px;
+    border-radius: 5px;
+}
