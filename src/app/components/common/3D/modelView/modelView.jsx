@@ -4,12 +4,13 @@ import Brain from "../brain";
 import Bulb from "../bulb";
 import Orbit from "../orbit";
 import "./modelView.css";
+import PropTypes from "prop-types";
 
 import {
     Canvas
 } from "react-three-fiber";
 
-const ModelView = () => {
+const ModelView = ({ setMeshes }) => {
     const id = (useParams()).modelId;
     return (
         <div className="modelview">
@@ -24,12 +25,17 @@ const ModelView = () => {
                         scale={new Array(3).fill(1)}
                         path={`/models/${id}.gltf`}
                         position={[0, 0, 0]}
+                        setMeshes={setMeshes}
                     />
                 </Suspense>
                 <Orbit/>
             </Canvas>
         </div>
     );
+};
+
+ModelView.propTypes = {
+    setMeshes: PropTypes.func
 };
 
 export default ModelView;

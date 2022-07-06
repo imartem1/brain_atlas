@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Search from "../../common/form/search";
+import Search from "../../common/form/search/search";
 import Models from "../../ui/models";
 
 const ModelsListPage = () => {

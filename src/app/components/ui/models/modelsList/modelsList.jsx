@@ -13,7 +13,8 @@ const ModelsList = ({ models }) => {
     );
 };
 ModelsList.propTypes = {
-    models: PropTypes.array
+    models: PropTypes.array,
+    history: PropTypes.object
 };
 
 export default ModelsList;

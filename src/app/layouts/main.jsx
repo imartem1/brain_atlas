@@ -1,15 +1,16 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
 import ModelPage from "../components/page/modelPage/modelPage";
 import ModelsListPage from "../components/page/modelsListPage/modelsListPage";
 
-const Models = () => {
+const Main = ({ history }) => {
     const params = useParams();
     const { modelId } = params;
     return (
         <>
             {modelId ? (
-                <ModelPage/>
+                <ModelPage history={ history }/>
             ) : (
                 <ModelsListPage/>
             )}
@@ -17,4 +18,8 @@ const Models = () => {
     );
 };
 
-export default Models;
+Main.propTypes = {
+    history: PropTypes.object
+};
+
+export default Main;
