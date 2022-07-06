@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Brain from "../brain";
 import Bulb from "../bulb";
 import Orbit from "../orbit";
+import "./modelView.css";
 
 import {
     Canvas
