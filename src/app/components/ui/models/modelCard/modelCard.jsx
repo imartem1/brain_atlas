@@ -18,7 +18,7 @@ const ModelCard = ({ model }) => {
             <p>{model.uncinate_fasciculus ? ("uncinate fasciculus") : ("-")}</p>
             <p>{model.frontal_aslant_tract ? ("frontal aslant tract") : ("-")}</p>
         </div>
-        <Link className="btn" to={`models/${model.id}`}>посмотреть модель</Link>
+        <Link className="btn" to={`/models/${model.id}`}>посмотреть модель</Link>
     </div>
     );
 };

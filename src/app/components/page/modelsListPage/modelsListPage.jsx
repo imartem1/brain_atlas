@@ -7,7 +7,7 @@ const ModelsListPage = () => {
     const [models] = useState({
         T01: {
             name: "T1",
-            id: "T1.glb",
+            id: "test.gltf",
             anterior_segment: true,
             posterior_segment: true,
             long_segment: true,

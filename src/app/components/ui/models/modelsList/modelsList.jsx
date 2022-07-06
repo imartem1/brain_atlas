@@ -13,7 +13,7 @@ const ModelsList = ({ models }) => {
     );
 };
 ModelsList.propTypes = {
-    models: PropTypes.object
+    models: PropTypes.array
 };
 
 export default ModelsList;
