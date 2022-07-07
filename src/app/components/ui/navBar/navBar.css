@@ -36,6 +36,7 @@ nav ul li .link{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .link.active, .link:hover{
     background: #374752;
