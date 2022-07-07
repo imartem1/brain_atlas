@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./editCard.css";
 
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";

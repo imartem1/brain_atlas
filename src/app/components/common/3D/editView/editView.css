@@ -1,0 +1,9 @@
+.editview{
+    margin: 5px;
+    margin-right: 10px;
+    background: #eeeff1;
+    border-radius: 5px;
+    width: 18vw;
+    height: 90vh;
+    overflow-y: scroll;
+}

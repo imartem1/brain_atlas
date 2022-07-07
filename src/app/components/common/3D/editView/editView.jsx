@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./editView.css";
 
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
@@ -9,7 +10,7 @@ import EditCard from "../../../ui/editCard/editCard";
 const EditView = ({ history, meshes, setMeshes }) => {
     const count = Object.values(meshes).length;
     return (
-        <div className="editview p-1">
+        <div className="editview">
             <BackButton history={history}/>
             {count === 0 ? (
                 <Box sx={{ display: "flex" }}>
